@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="show_time.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="toggle_btn.css">
+	<link rel="stylesheet" type="text/css" href="progressbar.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<script src="location.js"></script>
+	<script src="progressbar.js"></script>
+	<script src="control_slider.js"></script>
+	<script src="preview_data.js"></script>
+	<script src="contorl_wind.js"></script>
+	
+	<title>Remote</title>
+</head>
+
+<body>
+<header>
+	<div>
+		<h1 id='title'>D513冷氣控制(網頁版)</h1>	
+	</div>
+	<div id='img'>
+			
+	<img src="img/html.png" id='animation1'>
+	<img src="img/css.png" id='animation2'>
+	<img src="img/js.png" id='animation3'>
+	<img src="img/iot.jpg" id='animation4'>
+
+	</div>
+</header>
+<hr>
+
+
+<section id='left'>
+	<h2 style="color: red;text-align: center;">貼心小提醒</h2>
+	<h3>目前溫度(Current Temperature):<div class='data'></div></h3>
+	<h3>目前風速(Current Speed):<div class='data'></div></h3>
+	<h3>目前風向:</h3>
+	<div class="container">
+	<br>
+
+</div>
+</section>
+
+<section id='middle'>
+	<br>
+
+	<div id='contorl_on_off' class="control">
+		
+		<img src="img/refrigerator.png"  width="100" height="100" style="position: absolute; top:10px;">
+		<h3 style="position:absolute;left:150px;top:0px">冷氣開/關</h3>
+		<label class='switch' style="position: absolute;left:350px;top:40px">
+			</h3><input type="checkbox" >
+			<span class="slider round"></span>
+		</label>	
+
+
+	</div>
+	<br>
+	<div id='contorl_speed' class="control">
+		<img src="img/speed.jpg" id='speed-rotate' width="90" height="80" style="position: absolute; left:10px;">
+		<h3 style="position:absolute;left:150px;top:100px">冷氣風速強度</h3>
+		<div id='progressbar'>
+			<div class="light-grey">
+				<div id="myBar" class="green" style="height:24px;width:0px;border-radius: 20px;">
+			</div>
+			</div>
+			<div style="position: absolute;top: 30px"><input type="button" class="button " onclick="move()" id='up' value="+"/></div>
+			<div style="position: absolute;top: 30px;left: 70px"><input type="button" class="button " onclick="back()" id='down' value="-"/></button></div>
+		</div>
+
+		<div id='level' style="position: absolute;top:150px;left: 150px">
+			
+			<!--<h3>目前風速強度:</h3>-->
+
+
+		</div>
+
+	</div>
+	<br>
+	<div id='contorl_wind' class="control">
+		
+		<img src="img/wind_direction.jpg" width="100" height="100" style="position: absolute; left:10px; ">
+		<h3 style="position:absolute;left:150px;top:200px">冷氣風向</h3>
+		<div id='btn_option'>
+			
+			<input type="button" name="btn_wind" class='wind_button' value="控制" onclick="get_wind();">
+
+
+
+		</div>
+
+	</div>
+	<br>
+	<div id='contorl_temp' class="control">
+		
+		<img src="img/temperature.jpg" width="100" height="80" style="position: absolute;  ">
+		<h3 style="position:absolute;left:150px;top:300px">溫度控制</h3>
+		<div class='myslidercontainer'>
+			<input type="range" min='16' max='30' value='26' class='myslider' id='myrange' style='border-radius: 10px 10px 10px 10px' onclick="contorlslider()">
+		</div>
+
+	</div>
+	<br>
+	
+	<div id='tips' class="tip"><!--顯示目前時間、目前溫度(nodemcu抓取即時溫度)-->
+		<h3 style="float: left;">目前狀態</h3>
+		<div id='state'>
+			<h3 style="position: absolute;top:400px;left: 150px">目前時間:</h3>
+			<div id='time' style="position: absolute;left: 250px;top:400px">
+			</div>
+		</div>
+		<h3 style="position: absolute;top:430px;left: 150px">目前室內溫度:</h3>
+	</div>
+	
+</section>
+
+<section id='right' onmouseover="touch()" onclick="enter()" onmouseleave="resume()">
+	
+	<h2 style="writing-mode:vertical-lr;color: black !important;position: absolute; left:130px;top:130px;font-size:15px">溫度濕度數值顯示</h2>
+
+
+</section>
+
+<footer >
+</footer>
+<!--
+
+--!>
+
+</body>
+</html>

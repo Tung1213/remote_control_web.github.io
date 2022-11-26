@@ -1,0 +1,230 @@
+
+
+hr{
+
+	width:100%;
+	height: 1px;
+	border: black ridge;
+}
+header{
+
+	padding: 2px;
+	width: 300px;
+	height: 80px;
+	background-color:#ACD6FF;
+	border-radius: 5px 5px 5px 5px;
+
+}
+footer{
+
+
+	border: 2px black ridge;
+	border-style:outset;
+	border-radius: 5px 5px 5px 5px;
+	width:1340px;
+	height: 490px;
+	background-image:url('img/iot1.jpg'); 
+	background-repeat:no-repeat;
+	
+	background-size:1340px 490px;
+	
+
+}
+#title{
+
+	font-size: 30px;
+	text-align: left;
+}
+
+#animation1,#animation2,#animation3,#animation4{
+
+	position: absolute;
+	width:100px;
+	height: 70px;
+	padding: 4px;
+	
+
+}
+#wind_adjust{
+
+
+	padding: 0px;
+}
+#img{
+
+	width: 1040px;
+	height: 80px;
+	position: relative;
+
+	top:-80px;
+	left:300px;
+}
+
+#left,#middle{
+	position: absolute;
+	background-color:#0B345E; 
+	width:500px;
+	height:490px;
+	top:117px;
+	border-radius: 7px 7px 7px 7px;
+	opacity: 0.9;
+}
+#right{
+
+	position: absolute;
+	background-color:#00FFFF; 
+	width:348px;
+	height:495px;
+	left: 1005px;
+	top:115px;
+	border-radius: 7px 7px 7px 7px;
+	opacity: 0.9;
+
+}
+#right:hover{
+
+
+	cursor: pointer;
+	opacity: 0.5;
+	
+}
+h3,h4{
+
+	color: white;
+}
+.data{
+
+	display: inline-block;
+	color:white;
+ 	
+
+}
+.control{
+
+	background-color: #5B3C34;
+	width:500px;
+	height:80px;
+	border-radius: 7px 7px 7px 7px;
+	
+}
+.tip{
+
+	border: 2px red ridge;
+	width:490px;
+	height:70px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.wind_button{
+
+	position: absolute;
+	left: 0px;
+	box-shadow: 1px 2px 0px 0px #1564ad;
+	background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color: #79bbff;
+	border-radius: 31px;
+	display: inline-block;
+	cursor: pointer;
+	color: #06080a;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: :12px 30px;
+	text-decoration: none;
+	text-shadow: 0px 7px 0px #528ecc;
+
+}
+
+.wind_button:hover {
+
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color: #378de5;
+
+}
+.wind_button:active {/*代表的是用户按下按键和松开按键之间的时间*/
+	position:relative;
+	top:1px;
+
+}
+
+
+
+#progressbar{
+
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left:350px;
+	top:130px;
+	
+}
+#speed-rotate{
+
+
+	animation: rotate 5s linear infinite;
+
+}
+#btn_option{
+
+	position: absolute;
+	top:250px;
+	left:380px;
+
+
+}
+
+
+
+#animation1{
+
+	animation:moving1 7s ease-in-out infinite alternate;
+
+}
+#animation2{
+	animation:moving2 7s ease-in-out infinite alternate;
+
+}
+#animation3{
+	animation:moving3 7s ease-in-out infinite alternate;
+	
+}
+#animation4{
+	animation:moving4 7s ease-in-out infinite alternate;
+	
+}
+@keyframes rotate{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes newrotate{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+
+
+@keyframes moving1{
+
+	from {right: 0px;}
+	to{right: 920px;}
+}
+@keyframes moving2{
+
+	from {right: 0px;}
+	to{right: 810px;}
+
+}
+@keyframes moving3{
+
+	from {right: 0px;}
+	to{right: 700px;}
+
+}
+@keyframes moving4{
+
+	from {right: 0px;}
+	to{right: 590px;}
+	
+
+
+}

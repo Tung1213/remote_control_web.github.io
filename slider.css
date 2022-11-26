@@ -1,0 +1,23 @@
+
+.myslidercontainer{
+
+	position: absolute;
+	width: 100%;
+	left:340px;
+	top:350px;
+}
+.myslider:hover{
+
+	opacity: 1;
+}
+.myslider{
+
+	width: 25%;
+  	height: 25px;
+  	cursor: pointer;
+  	background-color: : #d3d3d3;
+  	-webkit-appearance: none; /*appearance:更改系統預設的外觀*/
+  	opacity: 0.7;
+
+
+}

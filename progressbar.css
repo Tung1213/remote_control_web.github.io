@@ -1,0 +1,38 @@
+.container{
+
+padding:0.01em 16px;
+
+}
+
+.light-grey{
+
+color:#000!important;/*(強制規則)* class內具備(!important)項目 > style定義 > class定義 > default定義*/
+background-color:#f1f1f1!important
+
+
+
+}
+.green{
+
+
+	color:#fff;
+	background-color:gray;
+
+
+
+}
+
+.button{
+	border:none;
+	display:inline-block;
+	padding:10px ;
+	/*overflow:hidden;*/
+	/*text-decoration:none;	*/
+	cursor:pointer;
+	/*white-space:nowrap;/*文字不進行換行*/
+	width:100%;
+	border-radius:10px;	
+	
+	
+}
+.button:hover{color:#000!important;background-color:#ccc!important}

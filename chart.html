@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chart</title>
+	<link rel="stylesheet" type="text/css" href="chart.css">
+	<script src='contorl_wind.js'></script>
+	<script src="chart.js"></script>
+
+</head>
+
+<body style="background-color: #3AAFA9">
+
+<div style="width: 1340px;height: 50px ;background-color: #2B7A78">
+	<header style="text-align: center; color:#FEFFFF"><h1>溫度/濕度圖表顯示</h1></header>
+</div>
+
+<div id='return'>
+		
+	<button class="glow-on-hover" type="button" onclick="history.back()">Back</button>
+	
+
+</div>
+
+<!--濕度
+position: absolute;width:500px;height: 400px;top:200px;left:800px;background-color: pink
+-->
+<section class='content'>
+		<canvas id="chart1" width="200px"></canvas>
+        
+</div>
+</section>
+<script src='temp_chart.js'></script>
+
+<hr/>
+<!--溫度-->
+<section id='chart2'>
+
+</section>
+
+
+
+</body>
+</html>
