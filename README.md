@@ -13,4 +13,6 @@
 # 使用了Chart.js繪製出圖表並動態顯示室內溫度(模擬結果)
 
 
-[![Watch the video](https://vimeo.com/806268344/f41cc3b090)
+[![asciicast]([https://asciinema.org/a/42383.png)](https://www.linkpicture.com/q/chart_10.png)](https://vimeo.com/806268344/f41cc3b090)
+
+<center>圖表呈現結果</center>
