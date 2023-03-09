@@ -1,7 +1,7 @@
 # 撰寫前端網頁來調節室內冷氣溫度
   (使用的程式語言)
    * HTML5  
-   * CSS
+   * CSS3
    * Javascript
 
 
