@@ -3,7 +3,7 @@
    * HTML5  
    * CSS3
    * Javascript
-   * 
+   * Chart.js
 
 ## 網頁呈現結果
 
